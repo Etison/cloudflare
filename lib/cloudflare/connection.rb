@@ -389,7 +389,7 @@ module CloudFlare
         user_key: user_key,
         zone_name: zone,
         resolve_to: resolve_to,
-        subdomains: subdomains.kind_of?(Array) ? zones.join(',') : subdomains
+        subdomains: subdomains.kind_of?(Array) ? subdomains.join(',') : subdomains
       })
     end
 
